@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Brand and Model Filtering App</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #container {
+        max-width: 400px;
+        margin: 50px auto;
+
+    }
+    select, button {
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <h2>Mobile Brand and Model Filtering App</h2>
+    <select id="brandSelect" onchange="populateModels()">
+        <option value="">Select Brand</option>
+    </select>
+    <select id="modelSelect">
+        <option value="">Select Model</option>
+    </select>
+
+    <button onclick="filterMobile()">Search</button>
+    <div id="result"></div> 
+</div>
+
+
+</body>
+<script src="app.js"></script>
+</html> 
+
+
+
